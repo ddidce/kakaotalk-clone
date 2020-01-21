@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poisition Example</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 400%;
+            background-color: red;
+        }
+
+        /* Position Fixed
+        
+        #boxOne {
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            position: static;
+        }
+
+        #boxTwo {
+            height: 300px;
+            width: 100%;
+            background-color: green;
+            position: fixed;
+            bottom: 30%;
+            left: 0;
+        } */
+
+
+        .abs-box {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .abs-child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Position Fixed -->
+    <!-- <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+
+
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div> -->
+
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+
+    <p>static : 디폴트로 모든 박스는 포지션이 static이다</p>
+    <p>fixed : 고정된 포지션으로 스크롤해도 그대로 남아있음
+        또한 **4가지 설정값을 줄 수있다 상,하,좌,우 간격
+    </p>
+
+    <p>absolute : 어디든 붙일 수 있지만 스크롤한다고 보이진 않음
+        absolute는 포지션 relative에 상대적으로 포지션을 잡는것.
+        relative포지션이 없을 경우, absolute는 문서의 본문 body에 맞춰서 포지션을 잡음
+
+        => 부모 박스에 relative포지션이 없을 경우 자식박스의 absolute포지션은 문서 본문 body에 맞춰서 포지션을 잡는다고 생각하면 되고
+        부모 박스에 relative포지션이 있을 경우 자식박스의 absolute포지션은 부모 박스 안에서 포지션을 잡는다고 생각하면 쉽다!
+    </p>
+
+    <p>static은 디폴트,
+        fixed는 고정. 어디든 오버랩해서 계속 해당 위치에 고정시키기 위한것
+        absolute는 포지션 relative에 상대적으로 포지션을 잡는것, relative포지션이 없을 경우, absloute는 문서 본문 body에 맞춰서 포지션을 잡음,
+
+    </p>
+</body>
+
+</html>

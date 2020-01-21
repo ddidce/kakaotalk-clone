@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline Example</title>
+    <style>
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <p>block : block이란 바로 옆에 아무것도 없을때 블록이라고한다. 이 박스가 다른 것이 옆에 있는 것을 허용하지 않기 때문 그래서 무엇이든
+        그 밑으로 위치하게 된다. => 블록은 폭, 높이가 존재하지만 element가 크기와 상관없이 그 옆에 다른 element가 위치하는 것을 허용 x</p>
+
+    <p>inline-block : 인라인-블록은 서로서로 붙는다 그래서 옆으로 나열됨
+        => 박스의 폭,높이가 존재하고 그리고 서로서로 옆에 놓을 수 있다
+    </p>
+
+    <p>inline : 인라인은 박스의 모든 property 설정값을 지운다.
+        인라인이라 함은 텍스트라고 생각하면 된다 텍스트는 높이, 폭 이 존재안함 컨텐츠의 길이만 존재
+
+    </p>
+</body>
+
+</html>

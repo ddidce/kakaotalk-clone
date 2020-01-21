@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Example</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .father {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+
+    <p>
+        또한 플렉스는 부모 박스에만 적용한다
+        css에 justify-content는 수평으로 적용,
+        align-items은 수직으로 적용
+        flex-direction : column이되면 justify-content 수직이 되고,
+        반대로 align-items은 수평이 된다.
+        flex-wrap: wrap;는 폭을 유지하고 밑으로 박스를 떨어뜨리고싶을 때 사용
+
+
+    </p>
+
+</body>
+
+</html>
