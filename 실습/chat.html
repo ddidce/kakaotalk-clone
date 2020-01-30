@@ -11,7 +11,7 @@
     <title>Chat | KaKao Clone</title>
 </head>
 
-<body>
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">
@@ -32,7 +32,7 @@
             <a href="../실습/index.html" class="header__back-btn">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <h1 class="header__title">Chat</h1>
+            <h1 class="header__title">Best Friend</h1>
         </div>
         <div class="header__hedaer-column">
             <span class="header__icon">
@@ -43,26 +43,44 @@
             </span>
         </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Friday, January 11, 2019</span>
             <li class="incoming-message message">
                 <img src="../실습/images/me.jpg" class="m-avatar message__avatar" alt="" />
                 <div class="message__content">
-                    <span class="message__author">Best Friend</span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Congrats I love you!
-                    </div>
+                    </span>
+                    <span class="message__author">Best Friend</span>
                 </div>
+            </li>
+
+            <li class="sent-message message">
                 <span class="message__timestamp"></span>
+                <div class="message__content">
+                    <span class="message__bubble">
+                        Thank you see you soon!
+                    </span>
+                </div>
             </li>
 
             <li class="incoming-message message">
+                <img src="../실습/images/me.jpg" class="m-avatar message__avatar" alt="" />
+                <div class="message__content">
+                    <span class="message__bubble">
+                        Congrats I love you!
+                    </span>
+                    <span class="message__author">Best Friend</span>
+                </div>
+            </li>
+
+            <li class="sent-message message">
                 <span class="message__timestamp"></span>
                 <div class="message__content">
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Thank you see you soon!
-                    </div>
+                    </span>
                 </div>
             </li>
         </ul>
